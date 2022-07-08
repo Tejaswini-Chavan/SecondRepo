@@ -22,6 +22,9 @@ public class CustomerServiceImpl implements CustomerService{
 
     @Override
     public CustomerEntity registerNewCustomer(CustomerDTO customerDTO) {
+	    /*
+	    System.out.println("Hello");
+	    */
 		CustomerEntity customerEntity = new CustomerEntity(customerDTO);
 		return customerRepositoryImpl.save(customerEntity);
     }
@@ -35,6 +38,8 @@ public class CustomerServiceImpl implements CustomerService{
 
 	@Override
 	public CustomerEntity updatePassword(CustomerDTO customerDTO) {
+		String name;
+		
 		CustomerEntity customerEntity = new CustomerEntity(customerDTO);
 		String id= customerDTO.getEmailId();
 		if(id !=null &&  !("".equals(id)))
