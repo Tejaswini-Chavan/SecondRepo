@@ -39,7 +39,9 @@ public class CustomerServiceImpl implements CustomerService{
 	@Override
 	public CustomerEntity updatePassword(CustomerDTO customerDTO) {
 		String name;
-		
+		/*
+	    System.out.println("Hello");
+	    */
 		CustomerEntity customerEntity = new CustomerEntity(customerDTO);
 		String id= customerDTO.getEmailId();
 		if(id !=null &&  !("".equals(id)))
