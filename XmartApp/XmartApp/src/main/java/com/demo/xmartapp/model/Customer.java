@@ -1,5 +1,5 @@
 package com.demo.xmartapp.model;
-
+/*
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.Valid;
@@ -68,3 +68,4 @@ public class Customer {
     }
 
 }
+*/
